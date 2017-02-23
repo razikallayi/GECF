@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.razikallayi.gecf.HomeActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_search"
+            android:id="@+id/home_search"/>
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_weight="3"
+            android:layout_height="100sp"
+            app:srcCompat="@drawable/logo_white" />
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_menu"
+            android:id="@+id/home_menu"/>
+    </LinearLayout>
+    <TextView
+        android:text="@string/home_gecf_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_gecf_title"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+       />
+
+
+    <TextView
+        android:text="@string/home_gecf_desc"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:id="@+id/home_gecf_desc"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Category"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_btn_category"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:minHeight="40dip"/>
+
+        <Button
+            android:text="List"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_btn_list"
+            android:layout_margin="10dp"
+            android:padding="-10dp"
+            android:background="@drawable/round_button"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:minHeight="40dip"
+            />
+
+        <Button
+            android:text="Price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_btn_price"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:minHeight="40dip"/>
+
+    </LinearLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="3">
+
+        <ImageView
+            android:layout_height="100dp"
+            android:src="@drawable/cat_1"
+            android:id="@+id/cat_1"
+            android:layout_width="86dp"
+            android:contentDescription="Price News" />
+
+        <ImageView
+            android:layout_height="100dp"
+            android:src="@drawable/cat_2"
+            android:id="@+id/cat_2"
+            android:layout_width="86dp"
+            android:contentDescription="Supply &amp; Demand" />
+        <ImageView
+            android:layout_height="100dp"
+            android:src="@drawable/cat_3"
+            android:id="@+id/cat_3"
+            android:layout_width="86dp"
+            android:contentDescription="Transportation &amp; Storage"/>
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat_4"
+            android:id="@+id/cat_4"
+            android:contentDescription="Policy &amp; Regulation"/>
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat_5"
+            android:id="@+id/cat_5"
+            android:contentDescription="Economics &amp; Geopilitics"/>
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat_7"
+            android:id="@+id/cat_7"
+            android:contentDescription="Technology"/>
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat_8"
+            android:id="@+id/cat_8"
+            android:contentDescription="Environment"/>
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat_9"
+            android:id="@+id/cat_9"
+            android:contentDescription="Trade"/>
+
+        <View
+            android:layout_width="86dp"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat_10"
+            android:id="@+id/cat_10"
+            android:contentDescription="Assets &amp; Investments"/>
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat_11"
+            android:id="@+id/cat_11"
+            android:contentDescription="Price Commentary"/>
+    </GridLayout>
+
+
+
+</LinearLayout>

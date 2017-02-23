@@ -1,0 +1,22 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".PriceActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/priceNewsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="outsideOverlay"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".report.TxnReportActivity"
+        tools:listitem="@layout/news_list_item" />
+
+
+</android.support.design.widget.CoordinatorLayout>

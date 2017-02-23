@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GECF</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="home_gecf_title">The Abundant Fuel Of Choice</string>
+    <string name="home_gecf_desc">Promoting Natural Gas- A Clean, Affordable and Sustainable Abundant Fuel Of Choice</string>
+</resources>
